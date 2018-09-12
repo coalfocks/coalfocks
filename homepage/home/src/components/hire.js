@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import Resume from '../assets/Resume_09_10_2018.pdf'
 
-class AboutMe extends Component {
+class HireMe extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -22,8 +23,8 @@ class AboutMe extends Component {
     render() {
         var styles = {
             container: {
-                backgroundColor: this.props.colors.midlight,
-                color: this.props.colors.dark,
+                backgroundColor: this.props.colors.middark,
+                color: this.props.colors.light,
                 fontFamily: 'Raleway',
                 fontWeight: 400,
                 fontSize: this.standardize(4.5) + 'em',
@@ -42,24 +43,26 @@ class AboutMe extends Component {
                 width: this.standardize(16) + 'em',
                 padding: '3px'
             },
+            a: {
+                color: this.props.colors.midlight,
+            },
+            ahover: {
+                color: this.props.colors.mid,
+            }
         };
         return (
-                // row of images of me doing normal people stuff
-            <div style={styles.container} id='about'>
-                <div style={styles.header}> hi, i'm cole</div>
-                <div style={styles.subheader}> i like to make stuff</div>
-                <div style={styles.subheader}> i also like to do normal people stuff</div>
-                <div style={styles.subheader}> i do mobile, web, and utility tool development</div>
+            <div style={styles.container} id='hire'>
+                <div style={styles.header}> hire me </div>
+                <div style={styles.subheader}> i'll make your wildest dreams come true</div>
                 <br />
-                <div style={styles.subheader}> i'm based in slc, utah</div>
-                <div style={styles.subheader}> i live with my wife, kim</div>
-                <div style={styles.subheader}> our favorite place in the world is france</div>
+                <div style={styles.subheader}> reach out at <a style={styles.a} href='mailto:coalfocks@gmail.com'>coalfocks@gmail.com</a> for quotes, questions, or even if you just have a funny joke</div>
                 <br />
-                <div style={styles.subheader}> oui oui</div>
+                <div style={styles.subheader}><a style={styles.a} href={Resume}>resume</a></div>
+                <br />
             </div>
         );
     }
 }
 
 
-export default AboutMe;
+export default HireMe;

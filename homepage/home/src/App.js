@@ -4,6 +4,8 @@ import Navbar from './components/navbar.js'
 import BGPhoto from './components/bgphoto.js'
 import AboutMe from './components/about.js'
 import ProjectsList from './components/projects.js'
+import HireMe from './components/hire.js'
+import Footer from './components/footer.js'
 import FlexView from 'react-flexview'
 import MediaQuery from 'react-responsive';
 
@@ -51,18 +53,24 @@ class App extends Component {
                     <Navbar colors={config.colorscheme} mobile={false} />
                     <div style={styles.headers}>
                         <Title colors={config.colorscheme} mobile={false} />
-                        <BGPhoto url={'kimncole.JPG'} colors={config.colorscheme} mobile={false}/>
+                        <BGPhoto url={'kimncole.JPG'} colors={config.colorscheme} mobile={false} caption={'Kim (wife) \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 Cole'} />
                         <AboutMe colors={config.colorscheme} mobile={false}/>
+                        <BGPhoto url={'france.jpg'} colors={config.colorscheme} mobile={false}/>
                         <ProjectsList colors={config.colorscheme} mobile={false}/>
+                        <HireMe colors={config.colorscheme} mobile={false}/>
+                        <Footer colors={config.colorscheme} mobile={false}/>
                     </div>
                 </MediaQuery>
                 <MediaQuery maxDeviceWidth={1224} >
                     <Navbar colors={config.colorscheme} mobile={true} />
                     <div style={styles.headers}>
                         <Title colors={config.colorscheme} mobile={true} />
-                        <BGPhoto url={'kimncole.JPG'} colors={config.colorscheme} mobile={true}/>
+                        <BGPhoto url={'kimncole.JPG'} colors={config.colorscheme} mobile={true} caption={'Kim (wife) \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 Cole'} />
                         <AboutMe colors={config.colorscheme} mobile={true}/>
+                        <BGPhoto url={'france.jpg'} colors={config.colorscheme} mobile={true}/>
                         <ProjectsList colors={config.colorscheme} mobile={true}/>
+                        <HireMe colors={config.colorscheme} mobile={true}/>
+                        <Footer colors={config.colorscheme} mobile={true}/>
                     </div>
                 </MediaQuery>
             </FlexView>
@@ -90,6 +98,7 @@ export default App;
  * toolbar
  * parallax effect
  * github/links
+ *  resume
  * social media
  * resume
  * contact

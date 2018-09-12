@@ -46,7 +46,11 @@ class ProjectsList extends Component {
         return (
             <div style={styles.container} id='projects'>
                 <div style={styles.header}> projects </div>
-                <div style={styles.subheader}> One day this will be a cool list of all the projects i've made. for now, just trust me that they're good </div>
+                <div style={styles.subheader}> one day this will be a cool list of all the projects i've made. for now, just trust me that they're good </div>
+                <div> picshaire here </div>
+                <br />
+                <div style={styles.subheader}> in the meantime, check out <a href='https://github.com/coalfocks'>github</a></div>
+                <br />
             </div>
         );
     }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class AboutMe extends Component {
+class PicshaireMarketing extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -22,8 +22,8 @@ class AboutMe extends Component {
     render() {
         var styles = {
             container: {
-                backgroundColor: this.props.colors.midlight,
-                color: this.props.colors.dark,
+                backgroundColor: this.props.colors.middark,
+                color: this.props.colors.light,
                 fontFamily: 'Raleway',
                 fontWeight: 400,
                 fontSize: this.standardize(4.5) + 'em',
@@ -44,22 +44,13 @@ class AboutMe extends Component {
             },
         };
         return (
-                // row of images of me doing normal people stuff
-            <div style={styles.container} id='about'>
-                <div style={styles.header}> hi, i'm cole</div>
-                <div style={styles.subheader}> i like to make stuff</div>
-                <div style={styles.subheader}> i also like to do normal people stuff</div>
-                <div style={styles.subheader}> i do mobile, web, and utility tool development</div>
-                <br />
-                <div style={styles.subheader}> i'm based in slc, utah</div>
-                <div style={styles.subheader}> i live with my wife, kim</div>
-                <div style={styles.subheader}> our favorite place in the world is france</div>
-                <br />
-                <div style={styles.subheader}> oui oui</div>
+            <div style={styles.container} id='hire'>
+                <div style={styles.header}> hire me </div>
+                <div style={styles.subheader}> i'll make your wildest dreams come true</div>
             </div>
         );
     }
 }
 
 
-export default AboutMe;
+export default PicshaireMarketing

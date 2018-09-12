@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
+import Insta from '../assets/insta.png'
+import LinkedIn from '../assets/linkedin.png'
+import Github from '../assets/github.png'
+import Email from '../assets/email.png'
 
-class AboutMe extends Component {
+class Footer extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -22,12 +26,13 @@ class AboutMe extends Component {
     render() {
         var styles = {
             container: {
-                backgroundColor: this.props.colors.midlight,
-                color: this.props.colors.dark,
+                backgroundColor: this.props.colors.dark,
+                color: this.props.colors.light,
                 fontFamily: 'Raleway',
                 fontWeight: 400,
                 fontSize: this.standardize(4.5) + 'em',
-                paddingTop: '20px'
+                paddingTop: '20px',
+                width: '100%'
             },
             header: {
                 fontWeight: 500,
@@ -37,29 +42,27 @@ class AboutMe extends Component {
             },
             subheader: {
                 fontWeight: 300,
-                fontSize: this.standardize(0.50) + 'em',
+                fontSize: this.standardize(0.20) + 'em',
                 margin: 'auto',
                 width: this.standardize(16) + 'em',
                 padding: '3px'
             },
+            icon: {
+                margin: '9px'
+            }
         };
         return (
-                // row of images of me doing normal people stuff
-            <div style={styles.container} id='about'>
-                <div style={styles.header}> hi, i'm cole</div>
-                <div style={styles.subheader}> i like to make stuff</div>
-                <div style={styles.subheader}> i also like to do normal people stuff</div>
-                <div style={styles.subheader}> i do mobile, web, and utility tool development</div>
-                <br />
-                <div style={styles.subheader}> i'm based in slc, utah</div>
-                <div style={styles.subheader}> i live with my wife, kim</div>
-                <div style={styles.subheader}> our favorite place in the world is france</div>
-                <br />
-                <div style={styles.subheader}> oui oui</div>
+            <div style={styles.container} id='hire'>
+                <div style={styles.subheader}>
+                    <a href='https://www.instagram.com/coalfocks/' >   <img style={styles.icon} src={Insta} /></a>
+                    <a href='https://github.com/coalfocks' >           <img style={styles.icon} src={Github} /></a>
+                    <a href='https://www.linkedin.com/in/coalfocks/' > <img style={styles.icon} src={LinkedIn} /></a>
+                    <a href='mailto:coalfocks@gmail.com' >             <img style={styles.icon} src={Email} /></a>
+                </div>
             </div>
         );
     }
 }
 
 
-export default AboutMe;
+export default Footer

@@ -100,6 +100,7 @@ class Navbar extends Component {
                     <div style={this.state.btn4hover ? styles.navBtnHover : styles.navBtn}
                         onMouseEnter={() => this.onHover(true, 4)}
                         onMouseLeave={() => this.onHover(false, 4)}
+                        onClick={() => this.scroll('hire')}
                     >hire</div> 
                 </div>
             </FlexView>

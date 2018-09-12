@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Photo from '../assets/kimncole.JPG';
+//import Photo from '../assets/kimncole.JPG';
 
 class BGPhoto extends Component {
     constructor(props) {
@@ -22,11 +22,13 @@ class BGPhoto extends Component {
     }
                                                                                                                                                                                                         
     render() {
+        const assets = require.context('../assets');
+        let photo = assets('./' + this.props.url);
         var styles = {
             container: {
                 width: '100%',
                 height: this.standardize(660) + 'px',
-                backgroundImage: `url(${Photo})`,
+                backgroundImage: `url(${photo})`,
                 backgroundSize: 'cover',
                 transform: 'scale(1.0)'
             },
@@ -37,12 +39,13 @@ class BGPhoto extends Component {
                position: 'relative',
                left: '50%',
                top: '40%',
-               color: this.props.colors.dark
+               color: this.props.colors.dark,
             }
         };
+        if (!this.props.caption) { styles.caption.display = 'none' }
         return (
             <div style={styles.container}>
-                <div style={styles.caption}>Kim (wife)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cole</div>
+                <div style={styles.caption}>{this.props.caption}</div>
             </div>
         );
     }       
