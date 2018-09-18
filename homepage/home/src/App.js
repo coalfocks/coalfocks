@@ -65,7 +65,7 @@ class App extends Component {
                     <Navbar colors={config.colorscheme} mobile={true} />
                     <div style={styles.headers}>
                         <Title colors={config.colorscheme} mobile={true} />
-                        <BGPhoto url={'kimncole.JPG'} colors={config.colorscheme} mobile={true} caption={'Kim (wife) \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 Cole'} />
+                        <BGPhoto url={'kimncole.JPG'} colors={config.colorscheme} mobile={true} />
                         <AboutMe colors={config.colorscheme} mobile={true}/>
                         <BGPhoto url={'france.jpg'} colors={config.colorscheme} mobile={true}/>
                         <ProjectsList colors={config.colorscheme} mobile={true}/>

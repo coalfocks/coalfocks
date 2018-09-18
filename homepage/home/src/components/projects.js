@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PicshaireMarketing from './picshaire_marketing.js'
 
 class ProjectsList extends Component {
     constructor(props) {
@@ -42,14 +43,25 @@ class ProjectsList extends Component {
                 width: this.standardize(16) + 'em',
                 padding: '3px'
             },
+            projects: {
+            }
         };
         return (
             <div style={styles.container} id='projects'>
                 <div style={styles.header}> projects </div>
-                <div style={styles.subheader}> one day this will be a cool list of all the projects i've made. for now, just trust me that they're good </div>
-                <div> picshaire here </div>
+                <div style={styles.projects}>
+                    <PicshaireMarketing colors={this.props.colors}/>
+                </div>
+                <div style={styles.header}>
+                    also...
+                </div>
+                <div style={styles.subheader}>
+                    <a href=''>-event RSVP</a><br /><br />
+                    <a href=''>-crowdsourcedsales landing page</a><br /><br />
+                    <a href='https://appexchange.salesforce.com/appxListingDetail?listingId=a0N300000016ay4EAA'>-powerdialer (insidesales.com)</a>
+                </div>
                 <br />
-                <div style={styles.subheader}> in the meantime, check out <a href='https://github.com/coalfocks'>github</a></div>
+                <div style={styles.subheader}> or check out <a href='https://github.com/coalfocks'>github</a></div>
                 <br />
             </div>
         );

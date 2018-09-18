@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import AppStore from '../assets/appstore.png'
+import Picshaire from '../assets/picshaire1.png'
 
 class PicshaireMarketing extends Component {
     constructor(props) {
@@ -22,31 +24,41 @@ class PicshaireMarketing extends Component {
     render() {
         var styles = {
             container: {
-                backgroundColor: this.props.colors.middark,
-                color: this.props.colors.light,
+                color: this.props.colors.middark,
                 fontFamily: 'Raleway',
                 fontWeight: 400,
-                fontSize: this.standardize(4.5) + 'em',
-                paddingTop: '20px'
+                fontSize: this.standardize(1.5) + 'em',
+                paddingTop: '20px',
+                margin: 'auto',
             },
             header: {
                 fontWeight: 500,
-                fontSize: this.standardize(0.75) + 'em',
-                margin: 'auto',
-                width: this.standardize(16) + 'em'
-            },
-            subheader: {
-                fontWeight: 300,
-                fontSize: this.standardize(0.50) + 'em',
+                fontSize: this.standardize(0.3) + 'em',
                 margin: 'auto',
                 width: this.standardize(16) + 'em',
-                padding: '3px'
+                textAlign: 'center',
             },
+            image: {
+                width: this.standardize(1.8) + 'em',
+                margin: 'auto'
+            },
+            artwork: {
+                backgroundColor: this.props.colors.midlight,
+                borderRadius: '8px',
+                width: this.standardize(1.8) + 'em',
+                padding: this.standardize(18) + 'px',
+                margin: 'auto',
+                marginTop: this.standardize(14) + 'px'
+            }
         };
         return (
-            <div style={styles.container} id='hire'>
-                <div style={styles.header}> hire me </div>
-                <div style={styles.subheader}> i'll make your wildest dreams come true</div>
+            <div style={styles.container} id='picshaire'>
+                <div style={styles.header}>- picshaire -</div>
+                <div style={styles.header}>photo sharing made great again</div>
+                <div style={styles.artwork}>
+                    <div><img src={Picshaire} style={styles.image} /></div>
+                    <div><a href='itms://itunes.apple.com/us/app/picshaire/id1390962206?ls=1&mt=8'><img src={AppStore} style={styles.image} /></a></div>
+                </div>
             </div>
         );
     }

@@ -8,7 +8,7 @@ class BGPhoto extends Component {
             mobile: this.props.mobile,
             url: '../assets/' + this.props.url
         };
-        this.mobileScale = 0.66;
+        this.mobileScale = 0.36;
         this.photoHeight = 750;
         this.standardize = this.standardize.bind(this);
     }
@@ -29,7 +29,8 @@ class BGPhoto extends Component {
                 width: '100%',
                 height: this.standardize(660) + 'px',
                 backgroundImage: `url(${photo})`,
-                backgroundSize: 'cover',
+                backgroundSize: this.state.mobile ? 'contain' : 'cover',
+                backgroundRepeat: 'no-repeat',
                 transform: 'scale(1.0)'
             },
             caption: {

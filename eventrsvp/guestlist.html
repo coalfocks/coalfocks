@@ -1,0 +1,26 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js'></script>
+        <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-firestore.js"></script>
+        <script src = 'static/js/guestlist.js'></script>
+        <div id='container' ng-app='guest-list' ng-controller='guest_list_ctrl'>
+            <div id='list'>
+                <div>--------------- ATTENDING ----- {{guests.attending.length}} --------<br/></div>
+                <h2 ng-repeat="x in guests.attending">{{x.last}}, {{x.first}} & {{x.guest ? x.guest : ''}} are attending: {{x.attending}}</h2>
+            </div>
+            <div><br /> --------------- NOT ATTENDING ---- {{guests.not_attending.length}} ---------<br/></div>
+            <div id='list2'>
+                <h2 ng-repeat="x in guests.not_attending">{{x.last}}, {{x.first}} & {{x.guest ? x.guest : ''}} are attending: {{x.attending}}</h2>
+            </div>
+            <div><br /> --------------- NO RSVP YET ---- {{guests.norsvp.length}} ---------<br/></div>
+            <div id='list2'>
+                <h2 ng-repeat="x in guests.norsvp">{{x.last}}, {{x.first}} & {{x.guest ? x.guest : ''}}</h2>
+            </div>
+        </div>
+    </body>
+</html>
