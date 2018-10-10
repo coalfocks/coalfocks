@@ -15,9 +15,14 @@ def index(path):
         print('serving index!')
         return send_from_directory('static/homepage/build', 'index.html')
 
-@app.route('/eventrsvp')
-def rsvp():
-    return send_from_directory('eventrsvp', 'index.html')
+@app.route('/eventrsvp/<path:path>')
+def rsvp(path):
+    if path != "" and os.path.exists("eventrsvp/" + path):
+        print ('serving file: {}'.format(path))
+        return send_from_directory('eventrsvp/', path)
+    else:
+        print('serving index!')
+        return send_from_directory('eventrsvp', 'index.html')
 
 @app.route('/api/helloworld')
 def hello():
