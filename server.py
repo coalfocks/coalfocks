@@ -2,7 +2,7 @@ import os
 from flask import Flask, jsonify
 from flask import send_from_directory
 from api.HelloWorlder import HelloWorlder
-#from api.GuestBook import GuestBook
+from api.GuestBook import GuestBook
 
 app = Flask(__name__)
 
@@ -30,13 +30,20 @@ def hello():
     hello = HelloWorlder()
     return jsonify({'response': hello.do()}) 
 
+@app.route('/api/guestbook/view')
+def viewGuests():
+    guestbook = GuestBook()
+    guests = guestbook.viewAll()
+    guest_string = ''
+    for guest in guests:
+        guest_string += "{}\r\n".format(guest['name'])
+    return guest_string
+
 @app.route('/api/guestbook/<name>')
 def signIn(name):
-    #guestbook = GuestBook()
-    #guests = guestbook.signIn(name)
-    #return "{}\r\n".format(guest for guest in guests)
-    return 'hi'
-
+    guestbook = GuestBook()
+    guests = guestbook.signIn(name)
+    return "{}\r\n".format(guest for guest in guests)
 
 @app.route('/halloween/<path:path>')
 def halloween(path):
