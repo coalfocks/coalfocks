@@ -3,6 +3,8 @@ from flask import Flask, jsonify
 from flask import send_from_directory
 from api.HelloWorlder import HelloWorlder
 from api.GuestBook import GuestBook
+from api.transit_timer.FrontrunnerFinder import FrontrunnerFinder
+from api.transit_timer.BusFinder import BusFinder
 
 app = Flask(__name__)
 
@@ -53,3 +55,21 @@ def halloween(path):
     else:
         print('serving index!')
         return send_from_directory('halloween', 'teamphotos.html')
+
+@app.route('/api/transit/<path:commute>')
+def getTime(commute):
+    if commute == 'morning':
+        ff = FrontrunnerFinder()
+        times = ff.morning_commute()
+        time_str = ''
+        for time in times:
+            time_str += "{}\r\n".format(time)
+        return time_str
+        
+    elif commute == 'afternoon':
+        bf = BusFinder()
+        times = bf.afternoon_commute()
+        time_str = ''
+        for time in times:
+            time_str += "{}\r\n".format(time)
+        return time_str
