@@ -8,9 +8,10 @@ from BusFinder import BusFinder
 #vl.get_ttd(stop_id=draper_station, route=frontrunner)
 
 ff = FrontrunnerFinder()
-#ff.morning_commute(True)
+result = ff.morning_commute()
+print(result)
 #ff.afternoon_commute(True)
 
-bf = BusFinder()
-bf.afternoon_commute(True)
+#bf = BusFinder()
+#bf.afternoon_commute(True)
 

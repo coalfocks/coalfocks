@@ -31,19 +31,32 @@ class VehicleLocator:
         #print (json.dumps(doc['Siri']['StopMonitoringDelivery']['MonitoredStopVisit']['MonitoredVehicleJourney']))
         vehicles = doc['Siri']['StopMonitoringDelivery']['MonitoredStopVisit']
         if 'MonitoredVehicleJourney' not in vehicles:
-            stop_name = doc['Siri']['StopMonitoringDelivery']['Extensions']['StopName']
+            try:
+                stop_name = doc['Siri']['StopMonitoringDelivery']['Extensions']['StopName']
+            except:
+                stop_name = 'stop'
             return ['No vehicles departing from {} direction {} within 25 minutes at this time.'.format(stop_name, direction)]
         if (type(vehicles['MonitoredVehicleJourney']) is not list):
             vehicles['MonitoredVehicleJourney'] = [vehicles['MonitoredVehicleJourney']]
         results = []
         for vehicle in vehicles['MonitoredVehicleJourney']:
             if vehicle['Extensions']['DestinationName'] == direction:
-                v_no = vehicle['VehicleRef']
-                stop_name = doc['Siri']['StopMonitoringDelivery']['Extensions']['StopName']
-                time = int( vehicle['MonitoredCall']['Extensions']['EstimatedDepartureTime'] )
-                minutes = int( time / 60 )
-                seconds = time % 60
-                result =  'vehicle {} to {} will arrive at {} in {} minutes and {} seconds'.format(v_no, direction, stop_name, minutes, seconds)
+                try:
+                    v_no = vehicle['VehicleRef']
+                    stop_name = doc['Siri']['StopMonitoringDelivery']['Extensions']['StopName']
+                    time = int( vehicle['MonitoredCall']['Extensions']['EstimatedDepartureTime'] )
+                    minutes = int( time / 60 )
+                    seconds = time % 60
+                    result =  'vehicle {} to {} will arrive at {} in {} minutes and {} seconds'.format(v_no, direction, stop_name, minutes, seconds)
+                except:
+                    if vehicle['MonitoredCall']['Extensions']['EstimatedDepartureTime'] is not None:
+                        time = int( vehicle['MonitoredCall']['Extensions']['EstimatedDepartureTime'] )
+                        minutes = int( time / 60 )
+                        seconds = time % 60
+                    else:
+                        minutes = 'a few'
+                        seconds = 'some'
+                    result = 'Something is coming in {} minutes and {} seconds'.format(minutes, seconds)
                 #print( result )
                 results.append(result)
         return results

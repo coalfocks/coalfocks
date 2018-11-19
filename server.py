@@ -63,7 +63,7 @@ def getTime(commute):
         times = ff.morning_commute()
         time_str = ''
         for time in times:
-            time_str += "{}\r\n".format(time)
+            time_str += "{}\r\n ".format(time)
         return time_str
         
     elif commute == 'afternoon':
