@@ -1,0 +1,102 @@
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+            background: #338DFF;
+        }
+
+        button {
+            margin: 10px;
+            background: #ffffff;
+            border: none;
+            border-radius: 8px;
+            padding: 40px;
+            width: 100%;
+            font-size: 2em;
+        }
+
+        .container {
+            max-width: 960px;
+            height: 100%;
+            margin-top: 20vh;
+        }
+
+        .text-container {
+            margin: auto;
+            font-size: 2em;
+            border-radius: 4px;
+            width: 70vw;
+            margin-bottom: 20px;
+        }
+        
+        .btn-container {
+            margin: auto;
+            width: 60vw;
+        }
+
+        #request {
+            text-align: center;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        #result {
+            display: none;
+            background: #dddddd;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 1.3em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class='container'>
+        <div class='text-container'>
+            <div id='request'>Choose a timeframe</div>
+            <div id='result'></div>
+        </div>
+        <div class='btn-container'>
+            <div id='morning'>
+                <button onclick='getMorning()'>MORNING</button>
+            </div>
+            <div id='afternoon'>
+                <button onclick='getAfternoon()'>AFTERNOON</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function getMorning() {
+            getTime('morning')
+        }
+
+        function getAfternoon() {
+            getTime('afternoon')
+        }
+
+        function getTime(time_of_day) {
+            document.getElementById('request').innerHTML = time_of_day.toUpperCase()
+            document.getElementById('result').innerHTML = '&middot; &middot; &middot;'
+            var url = 'http://coalfocks.com/api/transit/' + time_of_day
+            //var url = 'http://localhost:5000/api/transit/' + time_of_day
+            fetch(url, {
+                method: 'get',
+                mode: 'no-cors',
+            }).then(function(response) {
+                document.getElementById('result').style.display = 'block'
+                response.text().then( function (text) {
+                    document.getElementById('result').innerHTML = text
+                }).catch(function(err) {
+                    document.getElementById('result').innerHTML = 'An Error Occured - ' + err
+                    console.log(err)
+                });
+            }).catch(function(err) {
+                document.getElementById('result').innerHTML = 'An Error Occured - ' + err
+                console.log(err)
+            });
+        }
+    </script>
+</body>
+</html>

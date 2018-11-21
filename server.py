@@ -56,6 +56,10 @@ def halloween(path):
         print('serving index!')
         return send_from_directory('halloween', 'teamphotos.html')
 
+@app.route('/uta')
+def uta():
+    return send_from_directory('transit/', 'uta.html')
+        
 @app.route('/api/transit/<path:commute>')
 def getTime(commute):
     if commute == 'morning':

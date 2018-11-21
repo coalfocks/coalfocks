@@ -54,9 +54,10 @@ class VehicleLocator:
                         minutes = int( time / 60 )
                         seconds = time % 60
                     else:
+                        v_no = vehicle['VehicleRef']
                         minutes = 'a few'
                         seconds = 'some'
-                    result = 'Something is coming in {} minutes and {} seconds'.format(minutes, seconds)
+                    result = 'Vehicle {} will arrive in {} minutes and {} seconds'.format(v_no, minutes, seconds)
                 #print( result )
                 results.append(result)
         return results
