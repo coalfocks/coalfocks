@@ -79,7 +79,7 @@
         function getTime(time_of_day) {
             document.getElementById('request').innerHTML = time_of_day.toUpperCase()
             document.getElementById('result').innerHTML = '&middot; &middot; &middot;'
-            var url = 'http://coalfocks.com/api/transit/' + time_of_day
+            var url = '/api/transit/' + time_of_day
             //var url = 'http://localhost:5000/api/transit/' + time_of_day
             fetch(url, {
                 method: 'get',
