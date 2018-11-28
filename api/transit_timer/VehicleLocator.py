@@ -60,5 +60,9 @@ class VehicleLocator:
                     result = 'Vehicle {} will arrive in {} minutes and {} seconds'.format(v_no, minutes, seconds)
                 #print( result )
                 results.append(result)
+            else:
+                print('wrong way')
+                print(vehicle)
+        print ('there were {} results'.format(len(results)))
         return results
                 

@@ -65,6 +65,9 @@ def getTime(commute):
     if commute == 'morning':
         ff = FrontrunnerFinder()
         times = ff.morning_commute()
+        print('morning times: ')
+        for time in times:
+            print(time)
         time_str = ''
         for time in times:
             time_str += "{}\r\n ".format(time)
@@ -74,6 +77,9 @@ def getTime(commute):
     elif commute == 'afternoon':
         bf = BusFinder()
         times = bf.afternoon_commute()
+        print('morning times: ')
+        for time in times:
+            print(time)
         time_str = ''
         for time in times:
             time_str += "{}\r\n".format(time)
