@@ -1,6 +1,6 @@
 from .VehicleLocator import VehicleLocator
 
-DRAPER_STATION = 198022
+DRAPER_STATION = 'FR198022'
 FRONTRUNNER = 750
 class FrontrunnerFinder(VehicleLocator):
 
