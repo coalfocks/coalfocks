@@ -68,6 +68,7 @@ def getTime(commute):
         time_str = ''
         for time in times:
             time_str += "{}\r\n ".format(time)
+        print('time for morning commute: {}'.format(time_str))
         return time_str
         
     elif commute == 'afternoon':
@@ -76,4 +77,5 @@ def getTime(commute):
         time_str = ''
         for time in times:
             time_str += "{}\r\n".format(time)
+        print('time for afternoon commute: {}'.format(time_str))
         return time_str
