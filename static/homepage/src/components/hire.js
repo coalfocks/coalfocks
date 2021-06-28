@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Resume from '../assets/Resume_09_10_2018.pdf'
+import Resume from '../assets/current_resume.pdf'
 
 class HireMe extends Component {
     constructor(props) {
