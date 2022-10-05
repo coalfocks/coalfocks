@@ -1,0 +1,150 @@
+{"level":"notice","message":"pid: 93152","timestamp":"2022-09-11T05:29:05.528Z"}
+{"level":"notice","message":"environment: development","timestamp":"2022-09-11T05:29:05.529Z"}
+{"level":"info","message":"*** Starting my_actionhero_project ***","timestamp":"2022-09-11T05:29:05.529Z"}
+{"level":"notice","message":"Starting server: `web` @ http://0.0.0.0:8080","timestamp":"2022-09-11T05:29:05.531Z"}
+{"level":"notice","message":"Starting server: `websocket` ","timestamp":"2022-09-11T05:29:05.532Z"}
+{"level":"notice","message":"server ID: 192.168.1.17","timestamp":"2022-09-11T05:29:05.593Z"}
+{"level":"notice","message":"*** my_actionhero_project Started ***","timestamp":"2022-09-11T05:29:05.593Z"}
+{"level":"info","message":"actionhero member 192.168.1.17 has joined the cluster","timestamp":"2022-09-11T05:29:05.594Z"}
+{"duration":5,"file":"/Users/cole/coalfocks/public/index.html","level":"info","message":"[ file @ web ]","requestedFile":"index.html","size":3822,"success":true,"timestamp":"2022-09-11T05:29:27.734Z","to":"127.0.0.1"}
+{"duration":2,"file":"/Users/cole/coalfocks/public/logo/actionhero.png","level":"info","message":"[ file @ web ]","requestedFile":"logo/actionhero.png","size":59273,"success":true,"timestamp":"2022-09-11T05:29:27.759Z","to":"127.0.0.1"}
+{"duration":3,"file":"/Users/cole/coalfocks/public/css/cosmo.css","level":"info","message":"[ file @ web ]","requestedFile":"css/cosmo.css","size":170032,"success":true,"timestamp":"2022-09-11T05:29:27.760Z","to":"127.0.0.1"}
+{"action":"status","duration":23,"error":"","level":"info","message":"[ action @ web ]","method":"GET","params":"{\"action\":\"status\",\"apiVersion\":1}","pathname":"/api/status","timestamp":"2022-09-11T05:29:27.859Z","to":"127.0.0.1"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"favicon.ico","size":null,"success":false,"timestamp":"2022-09-11T05:29:28.161Z","to":"127.0.0.1"}
+{"level":"notice","message":"[ SIGNAL ] - SIGINT","timestamp":"2022-09-11T05:41:03.170Z"}
+{"level":"notice","message":"stopping process...","timestamp":"2022-09-11T05:41:03.171Z"}
+{"level":"notice","message":"[ SIGNAL ] - SIGINT","timestamp":"2022-09-11T05:41:03.171Z"}
+{"level":"notice","message":"Stopping server: web","timestamp":"2022-09-11T05:41:03.272Z"}
+{"level":"notice","message":"Stopping server: websocket","timestamp":"2022-09-11T05:41:03.273Z"}
+{"level":"notice","message":"*** my_actionhero_project Stopped ***","timestamp":"2022-09-11T05:41:03.277Z"}
+{"level":"notice","message":"pid: 96319","timestamp":"2022-09-11T05:46:31.205Z"}
+{"level":"notice","message":"environment: development","timestamp":"2022-09-11T05:46:31.206Z"}
+{"level":"info","message":"*** Starting my_actionhero_project ***","timestamp":"2022-09-11T05:46:31.206Z"}
+{"level":"notice","message":"Starting server: `web` @ http://0.0.0.0:8080","timestamp":"2022-09-11T05:46:31.208Z"}
+{"level":"notice","message":"Starting server: `websocket` ","timestamp":"2022-09-11T05:46:31.210Z"}
+{"level":"notice","message":"server ID: 192.168.1.17","timestamp":"2022-09-11T05:46:31.254Z"}
+{"level":"notice","message":"*** my_actionhero_project Started ***","timestamp":"2022-09-11T05:46:31.254Z"}
+{"level":"info","message":"actionhero member 192.168.1.17 has joined the cluster","timestamp":"2022-09-11T05:46:31.255Z"}
+{"level":"notice","message":"[ SIGNAL ] - SIGINT","timestamp":"2022-09-12T16:32:38.822Z"}
+{"level":"notice","message":"stopping process...","timestamp":"2022-09-12T16:32:38.825Z"}
+{"level":"notice","message":"[ SIGNAL ] - SIGINT","timestamp":"2022-09-12T16:32:38.826Z"}
+{"level":"notice","message":"Stopping server: web","timestamp":"2022-09-12T16:32:38.931Z"}
+{"level":"notice","message":"Stopping server: websocket","timestamp":"2022-09-12T16:32:38.934Z"}
+{"code":"ENOENT","errno":-2,"level":"error","message":"Unable to remove pidfile ENOENT: no such file or directory, unlink '/Users/cole/coalfocks/pids/actionhero-192.168.1.17'","path":"/Users/cole/coalfocks/pids/actionhero-192.168.1.17","stack":"Error: ENOENT: no such file or directory, unlink '/Users/cole/coalfocks/pids/actionhero-192.168.1.17'\n    at Object.unlinkSync (node:fs:1718:3)\n    at clearPidFile (/Users/cole/coalfocks/node_modules/actionhero/dist/classes/process/pid.js:28:12)\n    at /Users/cole/coalfocks/node_modules/actionhero/dist/classes/process.js:225:40\n    at Process.stop (/Users/cole/coalfocks/node_modules/actionhero/dist/classes/process.js:235:27)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n    at async process.<anonymous> (/Users/cole/coalfocks/node_modules/actionhero/dist/classes/process.js:313:17)","syscall":"unlink","timestamp":"2022-09-12T16:32:38.954Z"}
+{"level":"notice","message":"*** my_actionhero_project Stopped ***","timestamp":"2022-09-12T16:32:38.955Z"}
+{"level":"notice","message":"pid: 98915","timestamp":"2022-09-26T04:22:32.587Z"}
+{"level":"notice","message":"environment: development","timestamp":"2022-09-26T04:22:32.590Z"}
+{"level":"info","message":"*** Starting my_actionhero_project ***","timestamp":"2022-09-26T04:22:32.590Z"}
+{"level":"notice","message":"Starting server: `web` @ http://0.0.0.0:8080","timestamp":"2022-09-26T04:22:32.593Z"}
+{"level":"notice","message":"Starting server: `websocket` ","timestamp":"2022-09-26T04:22:32.594Z"}
+{"level":"notice","message":"server ID: 192.168.1.17","timestamp":"2022-09-26T04:22:32.718Z"}
+{"level":"notice","message":"*** my_actionhero_project Started ***","timestamp":"2022-09-26T04:22:32.719Z"}
+{"level":"info","message":"actionhero member 192.168.1.17 has joined the cluster","timestamp":"2022-09-26T04:22:32.719Z"}
+{"duration":5,"file":"/Users/cole/coalfocks/new_stuff/api/public/index.html","level":"info","message":"[ file @ web ]","requestedFile":"index.html","size":3822,"success":true,"timestamp":"2022-09-26T04:22:47.948Z","to":"127.0.0.1"}
+{"duration":7,"file":"/Users/cole/coalfocks/new_stuff/api/public/logo/actionhero.png","level":"info","message":"[ file @ web ]","requestedFile":"logo/actionhero.png","size":59273,"success":true,"timestamp":"2022-09-26T04:22:47.990Z","to":"127.0.0.1"}
+{"duration":8,"file":"/Users/cole/coalfocks/new_stuff/api/public/css/cosmo.css","level":"info","message":"[ file @ web ]","requestedFile":"css/cosmo.css","size":170032,"success":true,"timestamp":"2022-09-26T04:22:47.991Z","to":"127.0.0.1"}
+{"action":"status","duration":3,"error":"","level":"info","message":"[ action @ web ]","method":"GET","params":"{\"action\":\"status\",\"apiVersion\":1}","pathname":"/api/status","timestamp":"2022-09-26T04:22:48.261Z","to":"127.0.0.1"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"favicon.ico","size":null,"success":false,"timestamp":"2022-09-26T04:22:55.387Z","to":"127.0.0.1"}
+{"duration":1,"file":"/Users/cole/coalfocks/new_stuff/api/public/index.html","level":"info","message":"[ file @ web ]","requestedFile":"index.html","size":3897,"success":true,"timestamp":"2022-09-26T05:32:10.687Z","to":"127.0.0.1"}
+{"action":"status","duration":2,"error":"","level":"info","message":"[ action @ web ]","method":"GET","params":"{\"action\":\"status\",\"apiVersion\":1}","pathname":"/api/status","timestamp":"2022-09-26T05:32:10.764Z","to":"127.0.0.1"}
+{"action":"status","duration":18,"error":"","level":"info","message":"[ action @ web ]","method":"GET","params":"{\"action\":\"status\",\"apiVersion\":1}","pathname":"/api/status","timestamp":"2022-09-26T05:32:34.436Z","to":"127.0.0.1"}
+{"level":"notice","message":"[ SIGNAL ] - SIGINT","timestamp":"2022-09-26T05:33:54.235Z"}
+{"level":"notice","message":"stopping process...","timestamp":"2022-09-26T05:33:54.235Z"}
+{"level":"notice","message":"[ SIGNAL ] - SIGINT","timestamp":"2022-09-26T05:33:54.236Z"}
+{"level":"notice","message":"Stopping server: web","timestamp":"2022-09-26T05:33:54.337Z"}
+{"level":"notice","message":"Stopping server: websocket","timestamp":"2022-09-26T05:33:54.338Z"}
+{"level":"notice","message":"*** my_actionhero_project Stopped ***","timestamp":"2022-09-26T05:33:54.341Z"}
+{"level":"notice","message":"pid: 9279","timestamp":"2022-09-26T05:34:00.298Z"}
+{"level":"notice","message":"environment: development","timestamp":"2022-09-26T05:34:00.299Z"}
+{"level":"info","message":"*** Starting my_actionhero_project ***","timestamp":"2022-09-26T05:34:00.299Z"}
+{"level":"notice","message":"Starting server: `web` @ http://0.0.0.0:8080","timestamp":"2022-09-26T05:34:00.301Z"}
+{"level":"notice","message":"Starting server: `websocket` ","timestamp":"2022-09-26T05:34:00.303Z"}
+{"level":"notice","message":"server ID: 192.168.1.17","timestamp":"2022-09-26T05:34:00.412Z"}
+{"level":"notice","message":"*** my_actionhero_project Started ***","timestamp":"2022-09-26T05:34:00.412Z"}
+{"level":"info","message":"actionhero member 192.168.1.17 has joined the cluster","timestamp":"2022-09-26T05:34:00.413Z"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"public/css/cosmo.css","size":null,"success":false,"timestamp":"2022-09-26T05:35:52.106Z","to":"127.0.0.1"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"public/logo/actionhero.png","size":null,"success":false,"timestamp":"2022-09-26T05:35:52.109Z","to":"127.0.0.1"}
+{"action":"status","duration":13,"error":"","level":"info","message":"[ action @ web ]","method":"GET","params":"{\"action\":\"status\",\"apiVersion\":1}","pathname":"/api/status","timestamp":"2022-09-26T05:35:52.138Z","to":"127.0.0.1"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"public/css/cosmo.css","size":null,"success":false,"timestamp":"2022-09-26T05:37:17.929Z","to":"127.0.0.1"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"public/logo/actionhero.png","size":null,"success":false,"timestamp":"2022-09-26T05:37:17.931Z","to":"127.0.0.1"}
+{"action":"status","duration":1,"error":"","level":"info","message":"[ action @ web ]","method":"GET","params":"{\"action\":\"status\",\"apiVersion\":1}","pathname":"/api/status","timestamp":"2022-09-26T05:37:17.948Z","to":"127.0.0.1"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"public/css/cosmo.css","size":null,"success":false,"timestamp":"2022-09-26T05:37:20.103Z","to":"127.0.0.1"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"public/logo/actionhero.png","size":null,"success":false,"timestamp":"2022-09-26T05:37:20.105Z","to":"127.0.0.1"}
+{"action":"status","duration":14,"error":"","level":"info","message":"[ action @ web ]","method":"GET","params":"{\"action\":\"status\",\"apiVersion\":1}","pathname":"/api/status","timestamp":"2022-09-26T05:37:20.138Z","to":"127.0.0.1"}
+{"duration":2,"file":"/Users/cole/coalfocks/new_stuff/api/public/index.html","level":"info","message":"[ file @ web ]","requestedFile":"index.html","size":3897,"success":true,"timestamp":"2022-09-26T05:37:29.619Z","to":"127.0.0.1"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"public/css/cosmo.css","size":null,"success":false,"timestamp":"2022-09-26T05:37:29.642Z","to":"127.0.0.1"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"public/logo/actionhero.png","size":null,"success":false,"timestamp":"2022-09-26T05:37:29.643Z","to":"127.0.0.1"}
+{"action":"status","duration":1,"error":"","level":"info","message":"[ action @ web ]","method":"GET","params":"{\"action\":\"status\",\"apiVersion\":1}","pathname":"/api/status","timestamp":"2022-09-26T05:37:29.665Z","to":"127.0.0.1"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"public/favicon.ico","size":null,"success":false,"timestamp":"2022-09-26T05:37:30.314Z","to":"127.0.0.1"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"public/css/cosmo.css","size":null,"success":false,"timestamp":"2022-09-26T05:37:52.827Z","to":"127.0.0.1"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"public/logo/actionhero.png","size":null,"success":false,"timestamp":"2022-09-26T05:37:52.828Z","to":"127.0.0.1"}
+{"action":"status","duration":2,"error":"","level":"info","message":"[ action @ web ]","method":"GET","params":"{\"action\":\"status\",\"apiVersion\":1}","pathname":"/api/status","timestamp":"2022-09-26T05:37:52.845Z","to":"127.0.0.1"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"public/css/cosmo.css","size":null,"success":false,"timestamp":"2022-09-26T05:37:55.347Z","to":"127.0.0.1"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"public/logo/actionhero.png","size":null,"success":false,"timestamp":"2022-09-26T05:37:55.348Z","to":"127.0.0.1"}
+{"action":"status","duration":1,"error":"","level":"info","message":"[ action @ web ]","method":"GET","params":"{\"action\":\"status\",\"apiVersion\":1}","pathname":"/api/status","timestamp":"2022-09-26T05:37:55.369Z","to":"127.0.0.1"}
+{"level":"notice","message":"[ SIGNAL ] - SIGINT","timestamp":"2022-09-26T05:38:02.437Z"}
+{"level":"notice","message":"stopping process...","timestamp":"2022-09-26T05:38:02.438Z"}
+{"level":"notice","message":"Stopping server: web","timestamp":"2022-09-26T05:38:02.540Z"}
+{"level":"notice","message":"Stopping server: websocket","timestamp":"2022-09-26T05:38:02.541Z"}
+{"level":"notice","message":"*** my_actionhero_project Stopped ***","timestamp":"2022-09-26T05:38:02.545Z"}
+{"level":"notice","message":"pid: 9635","timestamp":"2022-09-26T05:38:18.091Z"}
+{"level":"notice","message":"environment: development","timestamp":"2022-09-26T05:38:18.092Z"}
+{"level":"info","message":"*** Starting my_actionhero_project ***","timestamp":"2022-09-26T05:38:18.092Z"}
+{"level":"notice","message":"Starting server: `web` @ http://0.0.0.0:8080","timestamp":"2022-09-26T05:38:18.095Z"}
+{"level":"notice","message":"Starting server: `websocket` ","timestamp":"2022-09-26T05:38:18.097Z"}
+{"level":"notice","message":"server ID: 192.168.1.17","timestamp":"2022-09-26T05:38:18.145Z"}
+{"level":"notice","message":"*** my_actionhero_project Started ***","timestamp":"2022-09-26T05:38:18.146Z"}
+{"level":"info","message":"actionhero member 192.168.1.17 has joined the cluster","timestamp":"2022-09-26T05:38:18.147Z"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"public/css/cosmo.css","size":null,"success":false,"timestamp":"2022-09-26T05:41:42.166Z","to":"127.0.0.1"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"public/logo/actionhero.png","size":null,"success":false,"timestamp":"2022-09-26T05:41:42.168Z","to":"127.0.0.1"}
+{"action":"status","duration":7,"error":"","level":"info","message":"[ action @ web ]","method":"GET","params":"{\"action\":\"status\",\"apiVersion\":1}","pathname":"/api/status","timestamp":"2022-09-26T05:41:42.189Z","to":"127.0.0.1"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"public/css/cosmo.css","size":null,"success":false,"timestamp":"2022-09-26T05:41:44.354Z","to":"127.0.0.1"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"public/logo/actionhero.png","size":null,"success":false,"timestamp":"2022-09-26T05:41:44.355Z","to":"127.0.0.1"}
+{"action":"status","duration":13,"error":"","level":"info","message":"[ action @ web ]","method":"GET","params":"{\"action\":\"status\",\"apiVersion\":1}","pathname":"/api/status","timestamp":"2022-09-26T05:41:44.388Z","to":"127.0.0.1"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"public/css/cosmo.css","size":null,"success":false,"timestamp":"2022-09-27T02:38:53.857Z","to":"127.0.0.1"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"public/logo/actionhero.png","size":null,"success":false,"timestamp":"2022-09-27T02:38:53.859Z","to":"127.0.0.1"}
+{"action":"status","duration":3,"error":"","level":"info","message":"[ action @ web ]","method":"GET","params":"{\"action\":\"status\",\"apiVersion\":1}","pathname":"/api/status","timestamp":"2022-09-27T02:38:53.901Z","to":"127.0.0.1"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"public/css/cosmo.css","size":null,"success":false,"timestamp":"2022-09-27T02:38:56.846Z","to":"127.0.0.1"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"public/logo/actionhero.png","size":null,"success":false,"timestamp":"2022-09-27T02:38:56.847Z","to":"127.0.0.1"}
+{"action":"status","duration":2,"error":"","level":"info","message":"[ action @ web ]","method":"GET","params":"{\"action\":\"status\",\"apiVersion\":1}","pathname":"/api/status","timestamp":"2022-09-27T02:38:56.870Z","to":"127.0.0.1"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"public/css/cosmo.css","size":null,"success":false,"timestamp":"2022-09-27T02:38:57.770Z","to":"127.0.0.1"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"public/logo/actionhero.png","size":null,"success":false,"timestamp":"2022-09-27T02:38:57.770Z","to":"127.0.0.1"}
+{"action":"status","duration":1,"error":"","level":"info","message":"[ action @ web ]","method":"GET","params":"{\"action\":\"status\",\"apiVersion\":1}","pathname":"/api/status","timestamp":"2022-09-27T02:38:57.792Z","to":"127.0.0.1"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"public/css/cosmo.css","size":null,"success":false,"timestamp":"2022-09-27T02:38:58.469Z","to":"127.0.0.1"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"public/logo/actionhero.png","size":null,"success":false,"timestamp":"2022-09-27T02:38:58.469Z","to":"127.0.0.1"}
+{"action":"status","duration":2,"error":"","level":"info","message":"[ action @ web ]","method":"GET","params":"{\"action\":\"status\",\"apiVersion\":1}","pathname":"/api/status","timestamp":"2022-09-27T02:38:58.492Z","to":"127.0.0.1"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"public/css/cosmo.css","size":null,"success":false,"timestamp":"2022-09-27T02:38:58.885Z","to":"127.0.0.1"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"public/logo/actionhero.png","size":null,"success":false,"timestamp":"2022-09-27T02:38:58.886Z","to":"127.0.0.1"}
+{"action":"status","duration":1,"error":"","level":"info","message":"[ action @ web ]","method":"GET","params":"{\"action\":\"status\",\"apiVersion\":1}","pathname":"/api/status","timestamp":"2022-09-27T02:38:58.908Z","to":"127.0.0.1"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"public/css/cosmo.css","size":null,"success":false,"timestamp":"2022-09-27T02:40:08.049Z","to":"127.0.0.1"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"public/logo/actionhero.png","size":null,"success":false,"timestamp":"2022-09-27T02:40:08.050Z","to":"127.0.0.1"}
+{"action":"status","duration":1,"error":"","level":"info","message":"[ action @ web ]","method":"GET","params":"{\"action\":\"status\",\"apiVersion\":1}","pathname":"/api/status","timestamp":"2022-09-27T02:40:08.068Z","to":"127.0.0.1"}
+{"duration":2,"file":"/Users/cole/coalfocks/new_stuff/api/public/index.html","level":"info","message":"[ file @ web ]","requestedFile":"index.html","size":3924,"success":true,"timestamp":"2022-09-27T02:40:56.034Z","to":"127.0.0.1"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"public/css/cosmo.css","size":null,"success":false,"timestamp":"2022-09-27T02:40:56.060Z","to":"127.0.0.1"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"public/logo/actionhero.png","size":null,"success":false,"timestamp":"2022-09-27T02:40:56.063Z","to":"127.0.0.1"}
+{"action":"status","duration":2,"error":"","level":"info","message":"[ action @ web ]","method":"GET","params":"{\"action\":\"status\",\"apiVersion\":1}","pathname":"/api/status","timestamp":"2022-09-27T02:40:56.079Z","to":"127.0.0.1"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"public/css/cosmo.css","size":null,"success":false,"timestamp":"2022-09-29T03:44:39.516Z","to":"127.0.0.1"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"public/logo/actionhero.png","size":null,"success":false,"timestamp":"2022-09-29T03:44:39.519Z","to":"127.0.0.1"}
+{"action":"status","duration":22,"error":"","level":"info","message":"[ action @ web ]","method":"GET","params":"{\"action\":\"status\",\"apiVersion\":1}","pathname":"/api/status","timestamp":"2022-09-29T03:44:39.580Z","to":"127.0.0.1"}
+{"duration":null,"file":"{not found}","level":"info","message":"[ file @ web ]","requestedFile":"public/favicon.ico","size":null,"success":false,"timestamp":"2022-09-29T03:44:40.009Z","to":"127.0.0.1"}
+{"level":"notice","message":"[ SIGNAL ] - SIGTERM","timestamp":"2022-09-29T03:50:52.703Z"}
+{"level":"notice","message":"stopping process...","timestamp":"2022-09-29T03:50:52.707Z"}
+{"level":"notice","message":"Stopping server: web","timestamp":"2022-09-29T03:50:52.813Z"}
+{"level":"notice","message":"Stopping server: websocket","timestamp":"2022-09-29T03:50:52.817Z"}
+{"level":"notice","message":"*** my_actionhero_project Stopped ***","timestamp":"2022-09-29T03:50:52.869Z"}
+{"level":"notice","message":"pid: 30173","timestamp":"2022-09-29T03:50:54.442Z"}
+{"level":"notice","message":"environment: development","timestamp":"2022-09-29T03:50:54.443Z"}
+{"level":"info","message":"*** Starting my_actionhero_project ***","timestamp":"2022-09-29T03:50:54.444Z"}
+{"level":"notice","message":"Starting server: `web` @ http://0.0.0.0:8080","timestamp":"2022-09-29T03:50:54.446Z"}
+{"level":"notice","message":"Starting server: `websocket` ","timestamp":"2022-09-29T03:50:54.447Z"}
+{"level":"notice","message":"server ID: 192.168.1.17","timestamp":"2022-09-29T03:50:54.530Z"}
+{"level":"notice","message":"*** my_actionhero_project Started ***","timestamp":"2022-09-29T03:50:54.530Z"}
+{"level":"info","message":"actionhero member 192.168.1.17 has joined the cluster","timestamp":"2022-09-29T03:50:54.531Z"}
+{"duration":8,"file":"/Users/cole/coalfocks/new_stuff/api/public/logo/actionhero.png","level":"info","message":"[ file @ web ]","requestedFile":"logo/actionhero.png","size":59273,"success":true,"timestamp":"2022-09-29T03:50:56.879Z","to":"127.0.0.1"}
+{"duration":10,"file":"/Users/cole/coalfocks/new_stuff/api/public/css/cosmo.css","level":"info","message":"[ file @ web ]","requestedFile":"css/cosmo.css","size":170032,"success":true,"timestamp":"2022-09-29T03:50:56.880Z","to":"127.0.0.1"}
+{"action":"status","duration":7,"error":"","level":"info","message":"[ action @ web ]","method":"GET","params":"{\"action\":\"status\",\"apiVersion\":1}","pathname":"/api/status","timestamp":"2022-09-29T03:50:56.920Z","to":"127.0.0.1"}
+{"level":"notice","message":"[ SIGNAL ] - SIGINT","timestamp":"2022-09-29T04:01:12.611Z"}
+{"level":"notice","message":"stopping process...","timestamp":"2022-09-29T04:01:12.614Z"}
+{"level":"notice","message":"Stopping server: web","timestamp":"2022-09-29T04:01:12.716Z"}
+{"level":"notice","message":"Stopping server: websocket","timestamp":"2022-09-29T04:01:12.718Z"}
+{"level":"notice","message":"*** my_actionhero_project Stopped ***","timestamp":"2022-09-29T04:01:12.745Z"}
