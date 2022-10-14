@@ -1,8 +1,21 @@
 import React, { Component } from 'react';
 import PicshaireMarketing from './picshaire_marketing.js'
 
-class ProjectsList extends Component {
-    constructor(props) {
+type Props = {
+    colors: {
+        dark: any,
+        middark: any,
+        midlight: any,
+        light: any,
+    },
+    mobile: boolean,
+}
+
+class ProjectsList extends Component<Props, any> {
+    private readonly mobileScale = 0.66;
+    private readonly logoHeight = 65;
+
+    constructor(props: Props) {
         super(props)
         this.state = {
             mobile: this.props.mobile
@@ -50,7 +63,7 @@ class ProjectsList extends Component {
             <div style={styles.container} id='projects'>
                 <div style={styles.header}> projects </div>
                 <div style={styles.projects}>
-                    <PicshaireMarketing colors={this.props.colors}/>
+                    <PicshaireMarketing colors={this.props.colors} mobile={this.state.mobile}/>
                 </div>
                 <div style={styles.header}>
                     also...

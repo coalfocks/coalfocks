@@ -4,14 +4,26 @@ import LinkedIn from '../assets/linkedin.png'
 import Github from '../assets/github.png'
 import Email from '../assets/email.png'
 
-class Footer extends Component {
+interface Props {
+    colors: {
+        dark: any,
+        middark: any,
+        mid: any,
+        midlight: any,
+        light: any,
+    },
+    mobile: boolean,
+} 
+
+class Footer extends Component<Props, any> {
+    private readonly mobileScale = 0.66;
+    private readonly logoHeight = 65;
+
     constructor(props) {
         super(props)
         this.state = {
             mobile: this.props.mobile
         };
-        this.mobileScale = 0.66;
-        this.logoHeight = 65;
         this.standardize = this.standardize.bind(this);
     }
     

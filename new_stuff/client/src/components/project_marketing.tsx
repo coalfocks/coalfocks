@@ -1,13 +1,28 @@
 import React, { Component } from 'react';
 
-class Project extends Component {
+type Props = {
+    colors: {
+        dark: any,
+        middark: any,
+        midlight: any,
+        light: any,
+    },
+    mobile: boolean,
+    url: string,
+    title: string,
+    caption: string,
+    href: string,
+}
+
+class Project extends Component<Props, any> {
+    private readonly mobileScale = 0.66;
+    private readonly logoHeight = 65;
+
     constructor(props) {
         super(props)
         this.state = {
             mobile: this.props.mobile
         };
-        this.mobileScale = 0.66;
-        this.logoHeight = 65;
         this.standardize = this.standardize.bind(this);
     }
     
@@ -20,8 +35,12 @@ class Project extends Component {
     }
 
     render() {
-        const assets = require.context('../assets');
-        let photo = assets('./' + this.props.url);
+        //const assets = require.context('../assets');
+        const assets = import.meta.glob('../assets/*', { eager: true, as: 'url' });
+        //let photo = assets('./' + this.props.url);
+        let photo = assets['../assets/' + this.props.url];
+        const appStore = assets['../assets/appstore.png'];
+
         var styles = {
             container: {
                 color: this.props.colors.middark,
@@ -36,7 +55,7 @@ class Project extends Component {
                 fontSize: this.standardize(0.3) + 'em',
                 margin: 'auto',
                 width: this.standardize(16) + 'em',
-                textAlign: 'center',
+                textAlign: 'center' as const,
             },
             image: {
                 width: this.standardize(1.8) + 'em',
@@ -57,7 +76,7 @@ class Project extends Component {
                 <div style={styles.header}>{this.props.caption}</div>
                 <div style={styles.artwork}>
                     <div><img src={photo} style={styles.image} /></div>
-                    <div><a href={this.props.href}><img src={AppStore} style={styles.image} /></a></div>
+                    <div><a href={this.props.href}><img src={appStore} style={styles.image} /></a></div>
                 </div>
             </div>
         );

@@ -1,8 +1,19 @@
 import React, { Component } from 'react';
 import FlexView from 'react-flexview'
 
-class Navbar extends Component {
-    constructor(props) {
+type Props = {
+    colors: {
+        dark: any,
+        middark: any,
+        mid: any,
+        midlight: any,
+        light: any,
+    },
+    mobile: boolean,
+}
+class Navbar extends Component<Props, any> {
+    private readonly mobileScale = 0.66;
+    constructor(props: Props) {
         super(props)
         this.state = {
             btn1hover: false,
@@ -11,7 +22,6 @@ class Navbar extends Component {
             btn4hover: false,
             mobile: this.props.mobile
         };
-        this.mobileScale = 0.66;
         this.onHover = this.onHover.bind(this);
         this.standardize = this.standardize.bind(this);
         this.scroll = this.scroll.bind(this);
@@ -46,7 +56,7 @@ class Navbar extends Component {
     render() {
         var styles = {
             container: {
-                position: 'fixed',
+                position: 'fixed' as const,
                 top: '0',
                 left: '0',
                 backgroundColor: this.props.colors.light,
@@ -61,7 +71,7 @@ class Navbar extends Component {
             },
             navBtn: {
                 fontSize: '0.4em',
-                float: 'left',
+                float: 'left' as const,
                 margin: '3px',
                 padding: '6px',
                 cursor: 'pointer',
@@ -72,7 +82,7 @@ class Navbar extends Component {
                 backgroundColor: this.props.colors.mid,
                 color: this.props.colors.light,
                 fontSize: this.state.mobile ? '0.4em' : '0.5em',
-                float: 'left',
+                float: 'left' as const,
                 padding: '4px',
                 cursor: 'pointer',
                 borderRadius: '3px',

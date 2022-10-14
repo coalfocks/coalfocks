@@ -2,19 +2,29 @@ import React, { Component } from 'react';
 import FoxHead from '../assets/fox.png'
 import FoxTail from '../assets/tail.png'
 
-class Title extends Component {
-    constructor(props) {
+type Props = {
+    colors: {
+        dark: any,
+        middark: any,
+        light: any,
+    },
+    mobile: boolean,
+}
+
+class Title extends Component<Props, any> {
+    private readonly mobileScale = 0.66;
+    private readonly logoHeight = 65;
+
+    constructor(props: Props) {
         super(props)
         this.state = {
             mobile: this.props.mobile
         };
-        this.mobileScale = 0.66;
-        this.logoHeight = 65;
         this.standardize = this.standardize.bind(this);
     }
     
     // adjusts for mobile
-    standardize = size => {
+    standardize = (size: number) => {
         if (this.state.mobile) {
             return size * this.mobileScale;
         }
